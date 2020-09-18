@@ -75,31 +75,4 @@ SidebarModule.getCustomInitialProps = async function ({
   } catch (err) {
     console.log(err);
   }
-
-  // const api = agility;
-
-  // try {
-  //   let rawPosts = await api.getContentList({
-  //     referenceName: "posts",
-  //     languageCode,
-  //   });
-
-  //   rawPosts.map((post, i) => {
-  //     return {
-  //       contentID: post.contentID,
-  //       title: post.fields.title,
-  //       url: url,
-  //       category: category?.fields.title || null,
-  //       author: author?.fields.name || null,
-  //       description,
-  //       imageSrc,
-  //     };
-  //   });
-
-  //   return {
-  //     posts,
-  //   };
-  // } catch (err) {
-  //   console.log(err);
-  // }
 };
